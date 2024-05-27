@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <h1>Welcome to your Notepad+++</h1>
+    <h1 className='welcome'>Welcome to your Notepad+++</h1>
     <FormattingToolbar changeColor={setSelectedColor}
                        changeSize={setSelectedSize}
                        changeFont={setSelectedFont}

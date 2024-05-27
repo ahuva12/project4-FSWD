@@ -1,4 +1,6 @@
 import React from "react";
+import styles from '../css/FormattingToolbar.module.css'
+
 
 function FormattingToolbar(props) {
   
@@ -25,8 +27,8 @@ function FormattingToolbar(props) {
   
     
     return (
-      <div className="formattingToolbar">
-        <label htmlFor="font-color">Color </label>
+      <div className={styles.formattingToolbar}>
+        <label htmlFor="font-color"></label>
         <input className="font-color" type="color" onBlur={(event) => handleChangeFormat(event.target.value, props.changeColor)}/> 
 
         <select className="font-size" onChange={(event) => handleChangeFormat(event.target.value, props.changeSize)}>Size
